@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ============================================================
+       PAGE TITLE & SEO META
+       Change title/description if business name or location changes
+  ============================================================ -->
+  <title>Bravo Lawn Care LLC – Hattiesburg, MS</title>
+  <meta name="description" content="Professional lawn care services in Hattiesburg, MS. Mowing, cleanup, sod installation, aeration, and power washing. Call 601-329-3322 for a free quote.">
+
+  <!-- ============================================================
+       GOOGLE FONTS
+       Oswald  = headings (bold, strong, professional)
+       Source Sans 3 = body text (clean, readable)
+  ============================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- ============================================================
+       BOOTSTRAP 5 — layout, grid, navbar, carousel, form controls
+  ============================================================ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+
+  <!-- ============================================================
+       FONT AWESOME — icons throughout the page
+  ============================================================ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- ============================================================
+       SITE STYLESHEET — all custom styles live in styles.css
+  ============================================================ -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       Sticky top navigation. Logo + links + call button.
+       Collapses to hamburger on mobile (Bootstrap handles this).
+  ============================================================ -->
+  <nav class="navbar navbar-expand-lg site-nav">
+    <div class="container">
+
+      <!-- Logo — replace bravo-logo.jpg if logo file changes -->
+      <a class="navbar-brand" href="#">
+        <img src="bravo-logo.jpg" alt="Bravo Lawn Care LLC logo" class="nav-logo">
+      </a>
+
+      <!-- Hamburger toggle for mobile -->
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav links + CTA button -->
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-center gap-1">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#why-us">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <!-- Phone CTA — update number here if it changes -->
+          <li class="nav-item ms-2">
+            <a href="tel:+16013293322" class="btn-call">
+              <i class="fas fa-phone"></i> 601-329-3322
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <!-- END NAVBAR -->
+
+
+  <!-- ============================================================
+       HERO SECTION
+       Full-height intro with logo, headline, subtext, and CTAs.
+       Background image is set in CSS (.hero) so it's easy to swap.
+  ============================================================ -->
+  <section class="hero" id="home">
+    <!-- Dark overlay so text stays readable over any background -->
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="row">
+        <div class="col-lg-7">
+
+          <!-- Location badge -->
+          <div class="hero-badge">
+            <i class="fas fa-map-marker-alt"></i>
+            Serving Hattiesburg, MS &amp; Surrounding Areas
+          </div>
+
+          <!-- Logo repeated in hero for brand reinforcement -->
+          <img src="bravo-logo.jpg" alt="Bravo Lawn Care LLC" class="hero-logo">
+
+          <!-- Main headline -->
+          <h1 class="hero-title">
+            Your Yard.<br>
+            <span class="accent-green">Our Passion.</span>
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="hero-sub">
+            Professional lawn care, cleanup, and landscaping services you can count on.
+            Spring season is here — let's get your yard looking its best.
+          </p>
+
+          <!-- CTA buttons -->
+          <div class="hero-btns">
+            <a href="#contact" class="btn-hero-primary">Get a Free Quote</a>
+            <a href="tel:+16013293322" class="btn-hero-outline">
+              <i class="fas fa-phone"></i> 601-329-3322
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END HERO -->
+
+
+  <!-- ============================================================
+       TRUST BAR
+       Quick credibility strip below the hero.
+       Four short trust signals in the brand teal color.
+  ============================================================ -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="row g-3">
+
+        <div class="col-6 col-md-3">
+          <div class="trust-item">
+            <i class="fas fa-check-circle"></i>
+            Licensed &amp; Insured
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="trust-item">
+            <i class="fas fa-leaf"></i>
+            Local Business
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="trust-item">
+            <i class="fas fa-star"></i>
+            Quality Guaranteed
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="trust-item">
+            <i class="fas fa-phone"></i>
+            Free Estimates
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- END TRUST BAR -->
+
+
+  <!-- ============================================================
+       SERVICES SECTION
+       Six cards: the 5 services from his Facebook + a "custom" card.
+       Icons are Font Awesome. Cards lift on hover (CSS transition).
+  ============================================================ -->
+  <section class="services-section" id="services">
+    <div class="container">
+
+      <!-- Section header -->
+      <div class="section-header">
+        <p class="section-label">What We Do</p>
+        <h2 class="section-title">Services We Offer</h2>
+        <p class="section-sub">
+          From weekly mowing to full yard transformations — we handle it all so you don't have to.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Lawn Mowing -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-cut"></i>
+            </div>
+            <h4>Lawn Mowing</h4>
+            <p>Regular mowing and edging to keep your lawn neat, healthy, and well-maintained all season long.</p>
+          </div>
+        </div>
+
+        <!-- Yard Cleanup -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-broom"></i>
+            </div>
+            <h4>General Yard Cleanup</h4>
+            <p>Debris removal, leaf cleanup, and full-yard clearing. We leave your property looking fresh and clean.</p>
+          </div>
+        </div>
+
+        <!-- Sod Installation -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h4>Sod Installation</h4>
+            <p>Transform bare or patchy areas into a lush, green lawn with professional sod installation.</p>
+          </div>
+        </div>
+
+        <!-- Aeration -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-wind"></i>
+            </div>
+            <h4>Aeration</h4>
+            <p>Loosen compacted soil to improve drainage, root growth, and overall lawn health with core aeration.</p>
+          </div>
+        </div>
+
+        <!-- Power Washing -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-tint"></i>
+            </div>
+            <h4>Power Washing</h4>
+            <p>Blast away dirt, grime, and stains from driveways, sidewalks, patios, and more.</p>
+          </div>
+        </div>
+
+        <!-- Custom / catch-all card -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="service-card service-card--cta">
+            <div class="service-icon service-icon--green">
+              <i class="fas fa-question-circle"></i>
+            </div>
+            <h4>Need Something Else?</h4>
+            <p>Don't see what you need? Reach out — we offer custom services and are happy to give a free estimate for any outdoor project.</p>
+            <a href="#contact" class="service-ask-link">Ask us &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- END SERVICES -->
+
+
+  <!-- ============================================================
+       GALLERY / CAROUSEL SECTION
+       Bootstrap carousel showing before/after and project photos.
+       Replace the placeholder divs with <img> tags once Gerry
+       provides photos. Each slide has a caption overlay.
+
+       TO ADD PHOTOS:
+         Replace each .carousel-placeholder div with:
+         <img src="your-photo.jpg" class="d-block w-100 carousel-img" alt="description">
+  ============================================================ -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+
+      <!-- Section header -->
+      <div class="section-header">
+        <p class="section-label">Our Work</p>
+        <h2 class="section-title">See the Results</h2>
+        <p class="section-sub">Real yards, real results. Swipe through recent projects.</p>
+      </div>
+
+      <!-- Bootstrap Carousel
+           data-bs-ride="carousel" = auto-advances
+           data-bs-interval on each item controls timing per slide
+      -->
+      <div id="bravoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <!-- Slide indicators (dots at the bottom) -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#bravoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#bravoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#bravoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#bravoCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#bravoCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+
+          <!-- SLIDE 1 — replace placeholder with real photo -->
+          <div class="carousel-item active" data-bs-interval="4000">
+            <div class="carousel-placeholder">
+              <i class="fas fa-camera"></i>
+              <p>Add project photo here</p>
+            </div>
+            <!-- Uncomment and fill in once you have photos:
+            <img src="project-1.jpg" class="d-block w-100 carousel-img" alt="Lawn cleanup project">
+            -->
+            <div class="carousel-caption">
+              <h5>General Yard Cleanup</h5>
+              <p>Hattiesburg, MS</p>
+            </div>
+          </div>
+
+          <!-- SLIDE 2 -->
+          <div class="carousel-item" data-bs-interval="4000">
+            <div class="carousel-placeholder">
+              <i class="fas fa-camera"></i>
+              <p>Add project photo here</p>
+            </div>
+            <div class="carousel-caption">
+              <h5>Lawn Mowing &amp; Edging</h5>
+              <p>Professional finish, every time</p>
+            </div>
+          </div>
+
+          <!-- SLIDE 3 -->
+          <div class="carousel-item" data-bs-interval="4000">
+            <div class="carousel-placeholder">
+              <i class="fas fa-camera"></i>
+              <p>Add project photo here</p>
+            </div>
+            <div class="carousel-caption">
+              <h5>Sod Installation</h5>
+              <p>From bare patches to lush lawn</p>
+            </div>
+          </div>
+
+          <!-- SLIDE 4 -->
+          <div class="carousel-item" data-bs-interval="4000">
+            <div class="carousel-placeholder">
+              <i class="fas fa-camera"></i>
+              <p>Add project photo here</p>
+            </div>
+            <div class="carousel-caption">
+              <h5>Power Washing</h5>
+              <p>Driveways, patios, walkways</p>
+            </div>
+          </div>
+
+          <!-- SLIDE 5 -->
+          <div class="carousel-item" data-bs-interval="4000">
+            <div class="carousel-placeholder">
+              <i class="fas fa-camera"></i>
+              <p>Add project photo here</p>
+            </div>
+            <div class="carousel-caption">
+              <h5>Landscaping &amp; Cleanup</h5>
+              <p>Full yard transformations</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- END carousel-inner -->
+
+        <!-- Prev/Next arrow controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#bravoCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bravoCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+      <!-- END Bootstrap Carousel -->
+
+      <!-- Link to TikTok for more content -->
+      <div class="gallery-tiktok-link">
+        <p>Want to see more? Check out our work on TikTok and Facebook.</p>
+        <div class="gallery-social-btns">
+          <a href="https://www.tiktok.com/@bravo.lawns" target="_blank" class="btn-social-tiktok">
+            <i class="fab fa-tiktok"></i> @bravo.lawns
+          </a>
+          <a href="https://www.facebook.com/people/Bravo-Lawn-Care-LLC/61576237877070/" target="_blank" class="btn-social-fb">
+            <i class="fab fa-facebook"></i> Facebook Page
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- END GALLERY -->
+
+
+  <!-- ============================================================
+       WHY US SECTION
+       Four numbered selling points on a light green background.
+       Left column = intro text + CTA. Right column = the four points.
+  ============================================================ -->
+  <section class="why-section" id="why-us">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+
+        <!-- Left: intro text -->
+        <div class="col-lg-5">
+          <p class="section-label">Why Bravo</p>
+          <h2 class="section-title">Local, reliable, and ready for spring.</h2>
+          <p class="section-sub">
+            Bravo Lawn Care LLC is a Hattiesburg-based small business built on honest work and great results.
+            We're not a big franchise — we're your neighbors.
+          </p>
+          <a href="tel:+16013293322" class="btn-teal">Call for a Free Estimate</a>
+        </div>
+
+        <!-- Right: numbered points -->
+        <div class="col-lg-7">
+
+          <div class="why-item">
+            <div class="why-num">01</div>
+            <div class="why-text">
+              <h5>Growing season is here</h5>
+              <p>Spring is prime time for lawn care in Mississippi. Don't wait — book now before the schedule fills up.</p>
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-num">02</div>
+            <div class="why-text">
+              <h5>Quality you can see</h5>
+              <p>We post our work on TikTok and Facebook. Real jobs, real results — no stock photos, no surprises.</p>
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-num">03</div>
+            <div class="why-text">
+              <h5>Straightforward pricing</h5>
+              <p>Free estimates, transparent quotes, and no hidden fees. You know what you're getting before we start.</p>
+            </div>
+          </div>
+
+          <div class="why-item why-item--last">
+            <div class="why-num">04</div>
+            <div class="why-text">
+              <h5>Small business, big effort</h5>
+              <p>Every yard gets our full attention. We treat your property like it's our own.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- END WHY US -->
+
+
+  <!-- ============================================================
+       CONTACT SECTION
+       Dark teal background. Left = contact cards. Right = quote form.
+       Form action is a placeholder — update once Gerry decides
+       whether he wants Formspree, email, or something else.
+  ============================================================ -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Left: contact info cards -->
+        <div class="col-lg-5">
+          <p class="section-label section-label--light">Get In Touch</p>
+          <h2 class="section-title section-title--light">Ready to get started?</h2>
+          <p class="section-sub section-sub--light">
+            Call or fill out the form for a free estimate.
+            Spring season is booking fast — reach out today.
+          </p>
+
+          <div class="contact-cards">
+
+            <!-- Phone -->
+            <a href="tel:+16013293322" class="contact-card">
+              <div class="contact-card-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-card-label">Call or Text</span>
+                <span class="contact-card-value">601-329-3322</span>
+              </div>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/people/Bravo-Lawn-Care-LLC/61576237877070/" target="_blank" class="contact-card">
+              <div class="contact-card-icon">
+                <i class="fab fa-facebook"></i>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-card-label">Facebook</span>
+                <span class="contact-card-value">Bravo Lawn Care LLC</span>
+              </div>
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@bravo.lawns" target="_blank" class="contact-card">
+              <div class="contact-card-icon">
+                <i class="fab fa-tiktok"></i>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-card-label">TikTok</span>
+                <span class="contact-card-value">@bravo.lawns</span>
+              </div>
+            </a>
+
+            <!-- Nextdoor -->
+            <a href="https://nextdoor.com/page/bravo-lawn-care-llc-hattiesburg-ms" target="_blank" class="contact-card">
+              <div class="contact-card-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-card-label">Nextdoor</span>
+                <span class="contact-card-value">Bravo Lawn Care LLC</span>
+              </div>
+            </a>
+
+          </div>
+          <!-- END contact-cards -->
+
+        </div>
+        <!-- END left col -->
+
+        <!-- Right: quote request form -->
+        <div class="col-lg-7">
+          <div class="quote-form">
+            <h3 class="quote-form-title">Request a Free Quote</h3>
+
+            <!--
+              FORM ACTION:
+              Replace "REPLACE_WITH_ENDPOINT" with:
+              - Formspree:  https://formspree.io/f/YOUR_ID
+              - Or mailto:  mailto:gerry@example.com
+              Confirm with Gerry before going live.
+            -->
+            <form action="REPLACE_WITH_ENDPOINT" method="POST">
+
+              <!-- Name + Phone row -->
+              <div class="row g-3 mb-3">
+                <div class="col-sm-6">
+                  <label for="name" class="form-label">Your Name *</label>
+                  <input type="text" id="name" name="name" class="form-control" placeholder="Jane Smith" required>
+                </div>
+                <div class="col-sm-6">
+                  <label for="phone" class="form-label">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" class="form-control" placeholder="(601) 555-0100" required>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="you@email.com">
+              </div>
+
+              <!-- Service dropdown -->
+              <div class="mb-3">
+                <label for="service" class="form-label">Service Needed *</label>
+                <select id="service" name="service" class="form-select" required>
+                  <option value="">— Select a service —</option>
+                  <option>Lawn Mowing</option>
+                  <option>General Yard Cleanup</option>
+                  <option>Sod Installation</option>
+                  <option>Aeration</option>
+                  <option>Power Washing</option>
+                  <option>Multiple Services</option>
+                  <option>Not sure — need advice</option>
+                </select>
+              </div>
+
+              <!-- Address -->
+              <div class="mb-3">
+                <label for="address" class="form-label">Address / Area</label>
+                <input type="text" id="address" name="address" class="form-control" placeholder="Hattiesburg, MS">
+              </div>
+
+              <!-- Message -->
+              <div class="mb-4">
+                <label for="message" class="form-label">Tell us about your yard</label>
+                <textarea id="message" name="message" class="form-control" rows="4"
+                  placeholder="Size of yard, current condition, any special requests..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-quote">Send Request &#10022;</button>
+
+            </form>
+          </div>
+        </div>
+        <!-- END right col -->
+
+      </div>
+    </div>
+  </section>
+  <!-- END CONTACT -->
+
+
+  <!-- ============================================================
+       FOOTER
+       Logo, copyright, address, and social icon links.
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row align-items-center g-4">
+
+        <!-- Logo + address -->
+        <div class="col-md-4">
+          <img src="bravo-logo.jpg" alt="Bravo Lawn Care LLC" class="footer-logo">
+          <p class="footer-address">Hattiesburg, MS &amp; Surrounding Areas</p>
+        </div>
+
+        <!-- Copyright + phone -->
+        <div class="col-md-4 text-md-center">
+          <p class="footer-phone"><a href="tel:+16013293322">601-329-3322</a></p>
+          <p class="footer-copy">&copy; 2026 Bravo Lawn Care LLC. All rights reserved.</p>
+          <p class="footer-credit">Site by <a href="https://faerytech.net" target="_blank">Faery Tech</a></p>
+        </div>
+
+        <!-- Social icons -->
+        <div class="col-md-4 d-flex justify-content-md-end">
+          <div class="footer-socials">
+            <a href="https://www.tiktok.com/@bravo.lawns" target="_blank" class="social-icon" aria-label="TikTok">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.facebook.com/people/Bravo-Lawn-Care-LLC/61576237877070/" target="_blank" class="social-icon" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://nextdoor.com/page/bravo-lawn-care-llc-hattiesburg-ms" target="_blank" class="social-icon" aria-label="Nextdoor">
+              <i class="fas fa-map-marker-alt"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+
+  <!-- ============================================================
+       SCRIPTS
+       Bootstrap bundle (includes Popper for dropdowns/carousel)
+       must load before main.js so Bootstrap is available.
+  ============================================================ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>

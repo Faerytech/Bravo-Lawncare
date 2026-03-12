@@ -1,849 +1,1131 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta name="description" content="Bravo Lawn Care LLC — professional lawn care services in Hattiesburg, MS. Free estimates. Call 601-329-3322.">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta
+      name="description"
+      content="Bravo Lawn Care LLC — professional lawn care services in Hattiesburg, MS. Free estimates. Call 601-329-3322."
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- ============================================================
+    <!-- ============================================================
        PAGE TITLE & SEO META
        Change title/description if business name or location changes
   ============================================================ -->
-  <title>Bravo Lawn Care LLC – Hattiesburg, MS</title>
-  <meta name="description" content="Professional lawn care services in Hattiesburg, MS. Mowing, cleanup, sod installation, aeration, and power washing. Call 601-329-3322 for a free quote.">
+    <title>Bravo Lawn Care LLC – Hattiesburg, MS</title>
+    <meta
+      name="description"
+      content="Professional lawn care services in Hattiesburg, MS. Mowing, cleanup, sod installation, aeration, and power washing. Call 601-329-3322 for a free quote."
+    />
 
-  <!-- ============================================================
+    <!-- ============================================================
        GOOGLE FONTS
        Oswald  = headings (bold, strong, professional)
        Source Sans 3 = body text (clean, readable)
   ============================================================ -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- ============================================================
+    <!-- ============================================================
        BOOTSTRAP 5 — layout, grid, navbar, carousel, form controls
   ============================================================ -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    />
 
-  <!-- ============================================================
+    <!-- ============================================================
        FONT AWESOME — icons throughout the page
   ============================================================ -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
-  <!-- ============================================================
+    <!-- ============================================================
        SITE STYLESHEET — all custom styles live in styles.css
   ============================================================ -->
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-  <!-- ============================================================
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ============================================================
        NAVBAR
        Sticky top navigation. Logo + links + call button.
        Collapses to hamburger on mobile (Bootstrap handles this).
   ============================================================ -->
-  <nav class="navbar navbar-expand-lg site-nav">
-    <div class="container">
+    <nav class="navbar navbar-expand-lg site-nav">
+      <div class="container">
+        <!-- Logo — replace bravo-logo.jpg if logo file changes -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="bravo-logo.jpg"
+            alt="Bravo Lawn Care LLC logo"
+            class="nav-logo"
+          />
+        </a>
 
-      <!-- Logo — replace bravo-logo.jpg if logo file changes -->
-      <a class="navbar-brand" href="#">
-        <img src="bravo-logo.jpg" alt="Bravo Lawn Care LLC logo" class="nav-logo">
-      </a>
+        <!-- Hamburger toggle for mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <!-- Hamburger toggle for mobile -->
-      <button class="navbar-toggler" type="button"
-              data-bs-toggle="collapse" data-bs-target="#navMenu"
-              aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Nav links + CTA button -->
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto align-items-center gap-1">
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="#why-us">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          <!-- Phone CTA — update number here if it changes -->
-          <li class="nav-item ms-2">
-            <a href="tel:+16013293322" class="btn-call">
-              <i class="fas fa-phone"></i> 601-329-3322
-            </a>
-          </li>
-        </ul>
+        <!-- Nav links + CTA button -->
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-center gap-1">
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#why-us">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <!-- Phone CTA — update number here if it changes -->
+            <li class="nav-item ms-2">
+              <a href="tel:+16013293322" class="btn-call">
+                <i class="fas fa-phone"></i> 601-329-3322
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+    <!-- END NAVBAR -->
 
-    </div>
-  </nav>
-  <!-- END NAVBAR -->
-
-
-  <!-- ============================================================
+    <!-- ============================================================
        HERO SECTION
        Full-height intro with logo, headline, subtext, and CTAs.
        Background image is set in CSS (.hero) so it's easy to swap.
   ============================================================ -->
-  <section class="hero" id="home">
-    <!-- Dark overlay so text stays readable over any background -->
-    <div class="hero-overlay"></div>
+    <section class="hero" id="home">
+      <!-- Dark overlay so text stays readable over any background -->
+      <div class="hero-overlay"></div>
 
-    <div class="container hero-content">
-      <div class="row">
-        <div class="col-lg-7">
+      <div class="container hero-content">
+        <div class="row">
+          <div class="col-lg-7">
+            <!-- Main headline -->
+            <h1 class="hero-title">
+              Your Yard.<br />
+              <span class="accent-green">Our Passion.</span>
+            </h1>
 
-          <!-- Main headline -->
-          <h1 class="hero-title">
-            Your Yard.<br>
-            <span class="accent-green">Our Passion.</span>
-          </h1>
+            <!-- Subheadline -->
+            <p class="hero-sub">
+              Professional lawn care, cleanup, and landscaping services you can
+              count on. Spring season is here — let's get your yard looking its
+              best.
+            </p>
 
-          <!-- Subheadline -->
-          <p class="hero-sub">
-            Professional lawn care, cleanup, and landscaping services you can count on.
-            Spring season is here — let's get your yard looking its best.
-          </p>
-
-          <!-- CTA buttons -->
-          <div class="hero-btns">
-            <a href="#contact" class="btn-hero-primary">Get a Free Quote</a>
-            <a href="tel:+16013293322" class="btn-hero-outline">
-              <i class="fas fa-phone"></i> 601-329-3322
-            </a>
+            <!-- CTA buttons -->
+            <div class="hero-btns">
+              <a href="#contact" class="btn-hero-primary">Get a Free Quote</a>
+              <a href="tel:+16013293322" class="btn-hero-outline">
+                <i class="fas fa-phone"></i> 601-329-3322
+              </a>
+            </div>
           </div>
-
         </div>
       </div>
-    </div>
-  </section>
-  <!-- END HERO -->
+    </section>
+    <!-- END HERO -->
 
-
-  <!-- ============================================================
+    <!-- ============================================================
        TRUST BAR
        Quick credibility strip below the hero.
        Four short trust signals in the brand teal color.
   ============================================================ -->
-  <div class="trust-bar">
-    <div class="container">
-      <div class="row g-3">
+    <div class="trust-bar">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-6 col-md-3">
+            <div class="trust-item">
+              <i class="fas fa-star"></i>
+              5-Star Service
+            </div>
+          </div>
 
-        <div class="col-6 col-md-3">
-          <div class="trust-item">
-            <i class="fas fa-check-circle"></i>
-            Licensed &amp; Insured
+          <div class="col-6 col-md-3">
+            <div class="trust-item">
+              <i class="fas fa-leaf"></i>
+              Local Business
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="trust-item">
+              <i class="fas fa-star"></i>
+              Quality Guaranteed
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="trust-item">
+              <i class="fas fa-phone"></i>
+              Free Estimates
+            </div>
           </div>
         </div>
-
-        <div class="col-6 col-md-3">
-          <div class="trust-item">
-            <i class="fas fa-leaf"></i>
-            Local Business
-          </div>
-        </div>
-
-        <div class="col-6 col-md-3">
-          <div class="trust-item">
-            <i class="fas fa-star"></i>
-            Quality Guaranteed
-          </div>
-        </div>
-
-        <div class="col-6 col-md-3">
-          <div class="trust-item">
-            <i class="fas fa-phone"></i>
-            Free Estimates
-          </div>
-        </div>
-
       </div>
     </div>
-  </div>
-  <!-- END TRUST BAR -->
+    <!-- END TRUST BAR -->
 
-  <!-- ============================================================
+    <!-- ============================================================
        SERVICES + TIKTOK — COMBINED SPLIT SECTION
        Left half: compact services grid (2 cols, no descriptions)
        Right half: TikTok video carousel
        Stacks vertically on mobile.
   ============================================================ -->
-  <section class="services-section" id="services">
-    <div class="container-fluid px-4 px-lg-5">
-      <div class="row g-5 align-items-start">
+    <section class="services-section" id="services">
+      <div class="container-fluid px-4 px-lg-5">
+        <div class="row g-5 align-items-start">
+          <!-- ── LEFT: Services grid ─────────────────────────── -->
+          <div class="col-12 col-lg-6">
+            <div class="section-header text-center">
+              <p class="section-label">What We Do</p>
+              <h2 class="section-title">Services We Offer</h2>
+              <p class="section-sub mx-auto">
+                From weekly mowing to full yard transformations — we handle it
+                all.
+              </p>
+            </div>
 
-        <!-- ── LEFT: Services grid ─────────────────────────── -->
-        <div class="col-12 col-lg-6">
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="service-card service-card--sm">
+                  <div class="service-icon"><i class="fas fa-cut"></i></div>
+                  <h4>Lawn Mowing</h4>
+                  <p>Neat, clean cuts and edging all season long.</p>
+                </div>
+              </div>
 
-          <div class="section-header text-center">
-            <p class="section-label">What We Do</p>
-            <h2 class="section-title">Services We Offer</h2>
-            <p class="section-sub mx-auto">From weekly mowing to full yard transformations — we handle it all.</p>
+              <div class="col-6">
+                <div class="service-card service-card--sm">
+                  <div class="service-icon"><i class="fas fa-broom"></i></div>
+                  <h4>General Yard Cleanup</h4>
+                  <p>Debris removal, leaf clearing, full-yard refresh.</p>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="service-card service-card--sm">
+                  <div class="service-icon">
+                    <i class="fas fa-seedling"></i>
+                  </div>
+                  <h4>Sod Installation</h4>
+                  <p>From bare patches to a lush, green lawn.</p>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="service-card service-card--sm">
+                  <div class="service-icon"><i class="fas fa-wind"></i></div>
+                  <h4>Aeration</h4>
+                  <p>Loosen compacted soil for healthier roots.</p>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="service-card service-card--sm">
+                  <div class="service-icon"><i class="fas fa-tint"></i></div>
+                  <h4>Power Washing</h4>
+                  <p>Driveways, patios, sidewalks — spotless.</p>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="service-card service-card--sm service-card--cta">
+                  <div class="service-icon service-icon--green">
+                    <i class="fas fa-question-circle"></i>
+                  </div>
+                  <h4>Something Else?</h4>
+                  <a href="#contact" class="service-ask-link">Ask us &rarr;</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social + follow links below services grid -->
+            <div class="gallery-tiktok-link mt-4">
+              <div class="gallery-social-btns">
+                <a
+                  href="https://www.tiktok.com/@bravo.lawns"
+                  target="_blank"
+                  class="btn-social-tiktok"
+                >
+                  <i class="fab fa-tiktok"></i> @bravo.lawns
+                </a>
+                <a
+                  href="https://www.facebook.com/people/Bravo-Lawn-Care-LLC/61576237877070/"
+                  target="_blank"
+                  class="btn-social-fb"
+                >
+                  <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a
+                  href="https://nextdoor.com/page/bravo-lawn-care-llc-hattiesburg-ms"
+                  target="_blank"
+                  class="btn-social-nd"
+                >
+                  <i class="fas fa-map-marker-alt"></i> Nextdoor
+                </a>
+              </div>
+            </div>
           </div>
+          <!-- END left services col -->
 
-          <div class="row g-3">
-
-            <div class="col-6">
-              <div class="service-card service-card--sm">
-                <div class="service-icon"><i class="fas fa-cut"></i></div>
-                <h4>Lawn Mowing</h4>
-                <p>Neat, clean cuts and edging all season long.</p>
-              </div>
+          <!-- ── RIGHT: TikTok carousel ───────────────────────── -->
+          <div class="col-12 col-lg-6" id="gallery">
+            <div class="section-header text-center">
+              <p class="section-label">Our Work</p>
+              <h2 class="section-title">Watch Us Work</h2>
+              <p class="section-sub mx-auto">
+                Real yards, real results — straight from our TikTok.
+              </p>
             </div>
 
-            <div class="col-6">
-              <div class="service-card service-card--sm">
-                <div class="service-icon"><i class="fas fa-broom"></i></div>
-                <h4>General Yard Cleanup</h4>
-                <p>Debris removal, leaf clearing, full-yard refresh.</p>
-              </div>
-            </div>
+            <script async src="https://www.tiktok.com/embed.js"></script>
 
-            <div class="col-6">
-              <div class="service-card service-card--sm">
-                <div class="service-icon"><i class="fas fa-seedling"></i></div>
-                <h4>Sod Installation</h4>
-                <p>From bare patches to a lush, green lawn.</p>
+            <div
+              id="tiktokCarousel"
+              class="carousel slide"
+              data-bs-ride="false"
+            >
+              <div class="carousel-indicators tiktok-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#tiktokCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Video 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#tiktokCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Video 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#tiktokCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Video 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#tiktokCarousel"
+                  data-bs-slide-to="3"
+                  aria-label="Video 4"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#tiktokCarousel"
+                  data-bs-slide-to="4"
+                  aria-label="Video 5"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#tiktokCarousel"
+                  data-bs-slide-to="5"
+                  aria-label="Video 6"
+                ></button>
               </div>
-            </div>
 
-            <div class="col-6">
-              <div class="service-card service-card--sm">
-                <div class="service-icon"><i class="fas fa-wind"></i></div>
-                <h4>Aeration</h4>
-                <p>Loosen compacted soil for healthier roots.</p>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="tiktok-wrap mx-auto">
+                    <blockquote
+                      class="tiktok-embed"
+                      cite="https://www.tiktok.com/@bravo.lawns/video/7560183079105498382"
+                      data-video-id="7560183079105498382"
+                      style="max-width: 325px; min-width: 325px"
+                    >
+                      <section>
+                        <a
+                          target="_blank"
+                          title="@bravo.lawns"
+                          href="https://www.tiktok.com/@bravo.lawns?refer=embed"
+                          >@bravo.lawns</a
+                        >
+                      </section>
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="tiktok-wrap mx-auto">
+                    <blockquote
+                      class="tiktok-embed"
+                      cite="https://www.tiktok.com/@bravo.lawns/video/7615241624070720782"
+                      data-video-id="7615241624070720782"
+                      style="max-width: 325px; min-width: 325px"
+                    >
+                      <section>
+                        <a
+                          target="_blank"
+                          title="@bravo.lawns"
+                          href="https://www.tiktok.com/@bravo.lawns?refer=embed"
+                          >@bravo.lawns</a
+                        >
+                      </section>
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="tiktok-wrap mx-auto">
+                    <blockquote
+                      class="tiktok-embed"
+                      cite="https://www.tiktok.com/@bravo.lawns/video/7569077144056302862"
+                      data-video-id="7569077144056302862"
+                      style="max-width: 325px; min-width: 325px"
+                    >
+                      <section>
+                        <a
+                          target="_blank"
+                          title="@bravo.lawns"
+                          href="https://www.tiktok.com/@bravo.lawns?refer=embed"
+                          >@bravo.lawns</a
+                        >
+                      </section>
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="tiktok-wrap mx-auto">
+                    <blockquote
+                      class="tiktok-embed"
+                      cite="https://www.tiktok.com/@bravo.lawns/video/7496474278590729518"
+                      data-video-id="7496474278590729518"
+                      style="max-width: 325px; min-width: 325px"
+                    >
+                      <section>
+                        <a
+                          target="_blank"
+                          title="@bravo.lawns"
+                          href="https://www.tiktok.com/@bravo.lawns?refer=embed"
+                          >@bravo.lawns</a
+                        >
+                      </section>
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="tiktok-wrap mx-auto">
+                    <blockquote
+                      class="tiktok-embed"
+                      cite="https://www.tiktok.com/@bravo.lawns/video/7566515474175970573"
+                      data-video-id="7566515474175970573"
+                      style="max-width: 325px; min-width: 325px"
+                    >
+                      <section>
+                        <a
+                          target="_blank"
+                          title="@bravo.lawns"
+                          href="https://www.tiktok.com/@bravo.lawns?refer=embed"
+                          >@bravo.lawns</a
+                        >
+                      </section>
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="tiktok-wrap mx-auto">
+                    <blockquote
+                      class="tiktok-embed"
+                      cite="https://www.tiktok.com/@bravo.lawns/video/7569725931569302798"
+                      data-video-id="7569725931569302798"
+                      style="max-width: 325px; min-width: 325px"
+                    >
+                      <section>
+                        <a
+                          target="_blank"
+                          title="@bravo.lawns"
+                          href="https://www.tiktok.com/@bravo.lawns?refer=embed"
+                          >@bravo.lawns</a
+                        >
+                      </section>
+                    </blockquote>
+                  </div>
+                </div>
               </div>
-            </div>
 
-            <div class="col-6">
-              <div class="service-card service-card--sm">
-                <div class="service-icon"><i class="fas fa-tint"></i></div>
-                <h4>Power Washing</h4>
-                <p>Driveways, patios, sidewalks — spotless.</p>
-              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#tiktokCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#tiktokCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-
-            <div class="col-6">
-              <div class="service-card service-card--sm service-card--cta">
-                <div class="service-icon service-icon--green"><i class="fas fa-question-circle"></i></div>
-                <h4>Something Else?</h4>
-                <a href="#contact" class="service-ask-link">Ask us &rarr;</a>
-              </div>
-            </div>
-
+            <!-- END tiktok carousel -->
           </div>
-
-          <!-- Social + follow links below services grid -->
-          <div class="gallery-tiktok-link mt-4">
-            <div class="gallery-social-btns">
-              <a href="https://www.tiktok.com/@bravo.lawns" target="_blank" class="btn-social-tiktok">
-                <i class="fab fa-tiktok"></i> @bravo.lawns
-              </a>
-              <a href="https://www.facebook.com/people/Bravo-Lawn-Care-LLC/61576237877070/" target="_blank" class="btn-social-fb">
-                <i class="fab fa-facebook"></i> Facebook
-              </a>
-              <a href="https://nextdoor.com/page/bravo-lawn-care-llc-hattiesburg-ms" target="_blank" class="btn-social-nd">
-                <i class="fas fa-map-marker-alt"></i> Nextdoor
-              </a>
-
-            </div>
-          </div>
-
+          <!-- END right tiktok col -->
         </div>
-        <!-- END left services col -->
-
-        <!-- ── RIGHT: TikTok carousel ───────────────────────── -->
-        <div class="col-12 col-lg-6" id="gallery">
-
-          <div class="section-header text-center">
-            <p class="section-label">Our Work</p>
-            <h2 class="section-title">Watch Us Work</h2>
-            <p class="section-sub mx-auto">Real yards, real results — straight from our TikTok.</p>
-          </div>
-
-          <script async src="https://www.tiktok.com/embed.js"></script>
-
-          <div id="tiktokCarousel" class="carousel slide" data-bs-ride="false">
-
-            <div class="carousel-indicators tiktok-indicators">
-              <button type="button" data-bs-target="#tiktokCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Video 1"></button>
-              <button type="button" data-bs-target="#tiktokCarousel" data-bs-slide-to="1" aria-label="Video 2"></button>
-              <button type="button" data-bs-target="#tiktokCarousel" data-bs-slide-to="2" aria-label="Video 3"></button>
-              <button type="button" data-bs-target="#tiktokCarousel" data-bs-slide-to="3" aria-label="Video 4"></button>
-              <button type="button" data-bs-target="#tiktokCarousel" data-bs-slide-to="4" aria-label="Video 5"></button>
-              <button type="button" data-bs-target="#tiktokCarousel" data-bs-slide-to="5" aria-label="Video 6"></button>
-            </div>
-
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="tiktok-wrap mx-auto">
-                  <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bravo.lawns/video/7560183079105498382" data-video-id="7560183079105498382" style="max-width:325px;min-width:325px;">
-                    <section><a target="_blank" title="@bravo.lawns" href="https://www.tiktok.com/@bravo.lawns?refer=embed">@bravo.lawns</a></section>
-                  </blockquote>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="tiktok-wrap mx-auto">
-                  <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bravo.lawns/video/7615241624070720782" data-video-id="7615241624070720782" style="max-width:325px;min-width:325px;">
-                    <section><a target="_blank" title="@bravo.lawns" href="https://www.tiktok.com/@bravo.lawns?refer=embed">@bravo.lawns</a></section>
-                  </blockquote>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="tiktok-wrap mx-auto">
-                  <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bravo.lawns/video/7569077144056302862" data-video-id="7569077144056302862" style="max-width:325px;min-width:325px;">
-                    <section><a target="_blank" title="@bravo.lawns" href="https://www.tiktok.com/@bravo.lawns?refer=embed">@bravo.lawns</a></section>
-                  </blockquote>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="tiktok-wrap mx-auto">
-                  <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bravo.lawns/video/7496474278590729518" data-video-id="7496474278590729518" style="max-width:325px;min-width:325px;">
-                    <section><a target="_blank" title="@bravo.lawns" href="https://www.tiktok.com/@bravo.lawns?refer=embed">@bravo.lawns</a></section>
-                  </blockquote>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="tiktok-wrap mx-auto">
-                  <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bravo.lawns/video/7566515474175970573" data-video-id="7566515474175970573" style="max-width:325px;min-width:325px;">
-                    <section><a target="_blank" title="@bravo.lawns" href="https://www.tiktok.com/@bravo.lawns?refer=embed">@bravo.lawns</a></section>
-                  </blockquote>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="tiktok-wrap mx-auto">
-                  <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bravo.lawns/video/7569725931569302798" data-video-id="7569725931569302798" style="max-width:325px;min-width:325px;">
-                    <section><a target="_blank" title="@bravo.lawns" href="https://www.tiktok.com/@bravo.lawns?refer=embed">@bravo.lawns</a></section>
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#tiktokCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#tiktokCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-
-          </div>
-          <!-- END tiktok carousel -->
-
-        </div>
-        <!-- END right tiktok col -->
-
       </div>
-    </div>
-  </section>
-  <!-- END SERVICES + GALLERY -->
+    </section>
+    <!-- END SERVICES + GALLERY -->
 
-
-
-  <!-- ============================================================
+    <!-- ============================================================
        WHY US SECTION
        Four numbered selling points on a light green background.
        Left column = intro text + CTA. Right column = the four points.
   ============================================================ -->
-  <section class="why-section" id="why-us">
-    <div class="container">
-      <div class="row g-5 align-items-center">
+    <section class="why-section" id="why-us">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <!-- Left: intro text -->
+          <div class="col-lg-5">
+            <p class="section-label">Why Bravo</p>
+            <h2 class="section-title">
+              Local, reliable, and ready for spring.
+            </h2>
+            <p class="section-sub">
+              Bravo Lawn Care LLC is a Hattiesburg-based small business built on
+              honest work and great results. We're not a big franchise — we're
+              your neighbors.
+            </p>
+            <a href="tel:+16013293322" class="btn-teal"
+              >Call for a Free Estimate</a
+            >
+          </div>
 
-        <!-- Left: intro text -->
-        <div class="col-lg-5">
-          <p class="section-label">Why Bravo</p>
-          <h2 class="section-title">Local, reliable, and ready for spring.</h2>
-          <p class="section-sub">
-            Bravo Lawn Care LLC is a Hattiesburg-based small business built on honest work and great results.
-            We're not a big franchise — we're your neighbors.
-          </p>
-          <a href="tel:+16013293322" class="btn-teal">Call for a Free Estimate</a>
+          <!-- Right: numbered points -->
+          <div class="col-lg-7">
+            <div class="why-item">
+              <div class="why-num">01</div>
+              <div class="why-text">
+                <h5>Growing season is here</h5>
+                <p>
+                  Spring is prime time for lawn care in Mississippi. Don't wait
+                  — book now before the schedule fills up.
+                </p>
+              </div>
+            </div>
+
+            <div class="why-item">
+              <div class="why-num">02</div>
+              <div class="why-text">
+                <h5>Quality you can see</h5>
+                <p>
+                  We post our work on TikTok and Facebook. Real jobs, real
+                  results — no stock photos, no surprises.
+                </p>
+              </div>
+            </div>
+
+            <div class="why-item">
+              <div class="why-num">03</div>
+              <div class="why-text">
+                <h5>Straightforward pricing</h5>
+                <p>
+                  Free estimates, transparent quotes, and no hidden fees. You
+                  know what you're getting before we start.
+                </p>
+              </div>
+            </div>
+
+            <div class="why-item why-item--last">
+              <div class="why-num">04</div>
+              <div class="why-text">
+                <h5>Small business, big effort</h5>
+                <p>
+                  Every yard gets our full attention. We treat your property
+                  like it's our own.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <!-- Right: numbered points -->
-        <div class="col-lg-7">
-
-          <div class="why-item">
-            <div class="why-num">01</div>
-            <div class="why-text">
-              <h5>Growing season is here</h5>
-              <p>Spring is prime time for lawn care in Mississippi. Don't wait — book now before the schedule fills up.</p>
-            </div>
-          </div>
-
-          <div class="why-item">
-            <div class="why-num">02</div>
-            <div class="why-text">
-              <h5>Quality you can see</h5>
-              <p>We post our work on TikTok and Facebook. Real jobs, real results — no stock photos, no surprises.</p>
-            </div>
-          </div>
-
-          <div class="why-item">
-            <div class="why-num">03</div>
-            <div class="why-text">
-              <h5>Straightforward pricing</h5>
-              <p>Free estimates, transparent quotes, and no hidden fees. You know what you're getting before we start.</p>
-            </div>
-          </div>
-
-          <div class="why-item why-item--last">
-            <div class="why-num">04</div>
-            <div class="why-text">
-              <h5>Small business, big effort</h5>
-              <p>Every yard gets our full attention. We treat your property like it's our own.</p>
-            </div>
-          </div>
-
-        </div>
-
       </div>
-    </div>
-  </section>
-  <!-- END WHY US -->
+    </section>
+    <!-- END WHY US -->
 
-
-  <!-- ============================================================
+    <!-- ============================================================
        CONTACT SECTION
        Dark teal background. Left = contact cards. Right = quote form.
        Form action is a placeholder — update once Gerry decides
        whether he wants Formspree, email, or something else.
   ============================================================ -->
-  <section class="contact-section" id="contact">
-    <div class="container">
-      <div class="row g-5">
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Left: contact info cards -->
+          <div class="col-lg-5">
+            <p class="section-label section-label--light">Get In Touch</p>
+            <h2 class="section-title section-title--light">
+              Ready to get started?
+            </h2>
+            <p class="section-sub section-sub--light">
+              Call or fill out the form for a free estimate. Spring season is
+              booking fast — reach out today.
+            </p>
 
-        <!-- Left: contact info cards -->
-        <div class="col-lg-5">
-          <p class="section-label section-label--light">Get In Touch</p>
-          <h2 class="section-title section-title--light">Ready to get started?</h2>
-          <p class="section-sub section-sub--light">
-            Call or fill out the form for a free estimate.
-            Spring season is booking fast — reach out today.
-          </p>
+            <div class="contact-cards">
+              <!-- Calendly booking link -->
+              <a
+                href="https://calendly.com/bravolawncare"
+                target="_blank"
+                class="contact-card"
+              >
+                <div class="contact-card-icon">
+                  <i class="fas fa-calendar-check"></i>
+                </div>
+                <div class="contact-card-text">
+                  <span class="contact-card-label">Book Online</span>
+                  <span class="contact-card-value"
+                    >Schedule a Free Estimate</span
+                  >
+                </div>
+              </a>
 
-          <div class="contact-cards">
+              <!-- Phone -->
+              <a href="tel:+16013293322" class="contact-card">
+                <div class="contact-card-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-card-text">
+                  <span class="contact-card-label">Call or Text</span>
+                  <span class="contact-card-value">601-329-3322</span>
+                </div>
+              </a>
 
-            <!-- Calendly booking link -->
-            <a href="https://calendly.com/bravolawncare" target="_blank" class="contact-card">
-              <div class="contact-card-icon">
-                <i class="fas fa-calendar-check"></i>
-              </div>
-              <div class="contact-card-text">
-                <span class="contact-card-label">Book Online</span>
-                <span class="contact-card-value">Schedule a Free Estimate</span>
-              </div>
-            </a>
+              <!-- Facebook -->
+              <a
+                href="https://www.facebook.com/people/Bravo-Lawn-Care-LLC/61576237877070/"
+                target="_blank"
+                class="contact-card"
+              >
+                <div class="contact-card-icon">
+                  <i class="fab fa-facebook"></i>
+                </div>
+                <div class="contact-card-text">
+                  <span class="contact-card-label">Facebook</span>
+                  <span class="contact-card-value">Bravo Lawn Care LLC</span>
+                </div>
+              </a>
 
-            <!-- Phone -->
-            <a href="tel:+16013293322" class="contact-card">
-              <div class="contact-card-icon">
-                <i class="fas fa-phone"></i>
-              </div>
-              <div class="contact-card-text">
-                <span class="contact-card-label">Call or Text</span>
-                <span class="contact-card-value">601-329-3322</span>
-              </div>
-            </a>
+              <!-- TikTok -->
+              <a
+                href="https://www.tiktok.com/@bravo.lawns"
+                target="_blank"
+                class="contact-card"
+              >
+                <div class="contact-card-icon">
+                  <i class="fab fa-tiktok"></i>
+                </div>
+                <div class="contact-card-text">
+                  <span class="contact-card-label">TikTok</span>
+                  <span class="contact-card-value">@bravo.lawns</span>
+                </div>
+              </a>
 
-            <!-- Facebook -->
-            <a href="https://www.facebook.com/people/Bravo-Lawn-Care-LLC/61576237877070/" target="_blank" class="contact-card">
-              <div class="contact-card-icon">
-                <i class="fab fa-facebook"></i>
-              </div>
-              <div class="contact-card-text">
-                <span class="contact-card-label">Facebook</span>
-                <span class="contact-card-value">Bravo Lawn Care LLC</span>
-              </div>
-            </a>
-
-            <!-- TikTok -->
-            <a href="https://www.tiktok.com/@bravo.lawns" target="_blank" class="contact-card">
-              <div class="contact-card-icon">
-                <i class="fab fa-tiktok"></i>
-              </div>
-              <div class="contact-card-text">
-                <span class="contact-card-label">TikTok</span>
-                <span class="contact-card-value">@bravo.lawns</span>
-              </div>
-            </a>
-
-            <!-- Nextdoor -->
-            <a href="https://nextdoor.com/page/bravo-lawn-care-llc-hattiesburg-ms" target="_blank" class="contact-card">
-              <div class="contact-card-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div class="contact-card-text">
-                <span class="contact-card-label">Nextdoor</span>
-                <span class="contact-card-value">Bravo Lawn Care LLC</span>
-              </div>
-            </a>
-
+              <!-- Nextdoor -->
+              <a
+                href="https://nextdoor.com/page/bravo-lawn-care-llc-hattiesburg-ms"
+                target="_blank"
+                class="contact-card"
+              >
+                <div class="contact-card-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-card-text">
+                  <span class="contact-card-label">Nextdoor</span>
+                  <span class="contact-card-value">Bravo Lawn Care LLC</span>
+                </div>
+              </a>
+            </div>
+            <!-- END contact-cards -->
           </div>
-          <!-- END contact-cards -->
+          <!-- END left col -->
 
-        </div>
-        <!-- END left col -->
+          <!-- Right: quote request form -->
+          <div class="col-lg-7">
+            <div class="quote-form">
+              <h3 class="quote-form-title">Request a Free Quote</h3>
 
-        <!-- Right: quote request form -->
-        <div class="col-lg-7">
-          <div class="quote-form">
-            <h3 class="quote-form-title">Request a Free Quote</h3>
-
-            <!--
+              <!--
               FORM ACTION:
               Replace "REPLACE_WITH_ENDPOINT" with:
               - Formspree:  https://formspree.io/f/YOUR_ID
               - Or mailto:  mailto:gerry@example.com
               Confirm with Gerry before going live.
             -->
-            <form action="https://formspree.io/f/mzdjrrbj" method="POST">
-
-              <!-- Name + Phone row -->
-              <div class="row g-3 mb-3">
-                <div class="col-sm-6">
-                  <label for="name" class="form-label">Your Name *</label>
-                  <input type="text" id="name" name="name" class="form-control" placeholder="Jane Smith" required>
+              <form action="https://formspree.io/f/mzdjrrbj" method="POST">
+                <!-- Name + Phone row -->
+                <div class="row g-3 mb-3">
+                  <div class="col-sm-6">
+                    <label for="name" class="form-label">Your Name *</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      placeholder="Jane Smith"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="phone" class="form-label">Phone Number *</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      class="form-control"
+                      placeholder="(601) 555-0100"
+                      required
+                    />
+                  </div>
                 </div>
-                <div class="col-sm-6">
-                  <label for="phone" class="form-label">Phone Number *</label>
-                  <input type="tel" id="phone" name="phone" class="form-control" placeholder="(601) 555-0100" required>
+
+                <!-- Email -->
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="you@email.com"
+                  />
                 </div>
-              </div>
 
-              <!-- Email -->
-              <div class="mb-3">
-                <label for="email" class="form-label">Email Address</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="you@email.com">
-              </div>
+                <!-- Service dropdown -->
+                <div class="mb-3">
+                  <label for="service" class="form-label"
+                    >Service Needed *</label
+                  >
+                  <select
+                    id="service"
+                    name="service"
+                    class="form-select"
+                    required
+                  >
+                    <option value="">— Select a service —</option>
+                    <option>Lawn Mowing</option>
+                    <option>General Yard Cleanup</option>
+                    <option>Sod Installation</option>
+                    <option>Aeration</option>
+                    <option>Power Washing</option>
+                    <option>Multiple Services</option>
+                    <option>Not sure — need advice</option>
+                  </select>
+                </div>
 
-              <!-- Service dropdown -->
-              <div class="mb-3">
-                <label for="service" class="form-label">Service Needed *</label>
-                <select id="service" name="service" class="form-select" required>
-                  <option value="">— Select a service —</option>
-                  <option>Lawn Mowing</option>
-                  <option>General Yard Cleanup</option>
-                  <option>Sod Installation</option>
-                  <option>Aeration</option>
-                  <option>Power Washing</option>
-                  <option>Multiple Services</option>
-                  <option>Not sure — need advice</option>
-                </select>
-              </div>
+                <!-- Address -->
+                <div class="mb-3">
+                  <label for="address" class="form-label">Address / Area</label>
+                  <input
+                    type="text"
+                    id="address"
+                    name="address"
+                    class="form-control"
+                    placeholder="Hattiesburg, MS"
+                  />
+                </div>
 
-              <!-- Address -->
-              <div class="mb-3">
-                <label for="address" class="form-label">Address / Area</label>
-                <input type="text" id="address" name="address" class="form-control" placeholder="Hattiesburg, MS">
-              </div>
+                <!-- Message -->
+                <div class="mb-4">
+                  <label for="message" class="form-label"
+                    >Tell us about your yard</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-control"
+                    rows="4"
+                    placeholder="Size of yard, current condition, any special requests..."
+                  ></textarea>
+                </div>
 
-              <!-- Message -->
-              <div class="mb-4">
-                <label for="message" class="form-label">Tell us about your yard</label>
-                <textarea id="message" name="message" class="form-control" rows="4"
-                  placeholder="Size of yard, current condition, any special requests..."></textarea>
-              </div>
-
-              <button type="submit" class="btn-quote">Send Request &#10022;</button>
-
-            </form>
+                <button type="submit" class="btn-quote">
+                  Send Request &#10022;
+                </button>
+              </form>
+            </div>
           </div>
+          <!-- END right col -->
         </div>
-        <!-- END right col -->
-
       </div>
-    </div>
-  </section>
-  <!-- END CONTACT -->
+    </section>
+    <!-- END CONTACT -->
 
-
-  <!-- ============================================================
+    <!-- ============================================================
        FOOTER
        Logo, copyright, address, and social icon links.
   ============================================================ -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row align-items-center g-4">
-
-        <!-- Logo + address -->
-        <div class="col-md-4">
-          <!-- Faery Tech credit -->
-          <a href="https://faerytech.net" target="_blank" class="faerytech-credit">
-            <img src="faerytech-logo.png" alt="Faery Tech" class="footer-logo faerytech-footer-logo">
-            <span>Site by <strong>Faery Tech</strong></span>
-          </a>
-        </div>
-
-        <!-- Copyright + phone -->
-        <div class="col-md-4 text-md-center">
-          <p class="footer-phone"><a href="tel:+16013293322">601-329-3322</a></p>
-          <p class="footer-copy">&copy; 2026 Bravo Lawn Care LLC. All rights reserved.</p>
-        </div>
-
-        <!-- Social icons -->
-        <div class="col-md-4 d-flex justify-content-md-end">
-          <div class="footer-socials">
-            <a href="https://www.tiktok.com/@bravo.lawns" target="_blank" class="social-icon" aria-label="TikTok">
-              <i class="fab fa-tiktok"></i>
-            </a>
-            <a href="https://www.facebook.com/people/Bravo-Lawn-Care-LLC/61576237877070/" target="_blank" class="social-icon" aria-label="Facebook">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://nextdoor.com/page/bravo-lawn-care-llc-hattiesburg-ms" target="_blank" class="social-icon" aria-label="Nextdoor">
-              <span style="font-size:0.7rem;font-weight:700;letter-spacing:0.05em;">ND</span>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <!-- Logo + address -->
+          <div class="col-md-4">
+            <!-- Faery Tech credit -->
+            <a
+              href="https://faerytech.net"
+              target="_blank"
+              class="faerytech-credit"
+            >
+              <img
+                src="faerytech-logo.png"
+                alt="Faery Tech"
+                class="footer-logo faerytech-footer-logo"
+              />
+              <span>Site by <strong>Faery Tech</strong></span>
             </a>
           </div>
+
+          <!-- Copyright + phone -->
+          <div class="col-md-4 text-md-center">
+            <p class="footer-phone">
+              <a href="tel:+16013293322">601-329-3322</a>
+            </p>
+            <p class="footer-copy">
+              &copy; 2026 Bravo Lawn Care LLC. All rights reserved.
+            </p>
+          </div>
+
+          <!-- Social icons -->
+          <div class="col-md-4 d-flex justify-content-md-end">
+            <div class="footer-socials">
+              <a
+                href="https://www.tiktok.com/@bravo.lawns"
+                target="_blank"
+                class="social-icon"
+                aria-label="TikTok"
+              >
+                <i class="fab fa-tiktok"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/people/Bravo-Lawn-Care-LLC/61576237877070/"
+                target="_blank"
+                class="social-icon"
+                aria-label="Facebook"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://nextdoor.com/page/bravo-lawn-care-llc-hattiesburg-ms"
+                target="_blank"
+                class="social-icon"
+                aria-label="Nextdoor"
+              >
+                <span
+                  style="
+                    font-size: 0.7rem;
+                    font-weight: 700;
+                    letter-spacing: 0.05em;
+                  "
+                  >ND</span
+                >
+              </a>
+            </div>
+          </div>
         </div>
-
       </div>
-    </div>
-  </footer>
-  <!-- END FOOTER -->
+    </footer>
+    <!-- END FOOTER -->
 
-
-  <!-- ============================================================
+    <!-- ============================================================
        SCRIPTS
        Bootstrap bundle (includes Popper for dropdowns/carousel)
        must load before main.js so Bootstrap is available.
   ============================================================ -->
 
-  <!-- ============================================================
+    <!-- ============================================================
        AI CHAT WIDGET
        Floating chat button — powered by Cloudflare Worker
        Worker URL: https://bravo-chat.moore-madyson.workers.dev
        Built by Faery Tech
   ============================================================ -->
 
-  <!-- Chat bubble button -->
-  <button id="chat-toggle" aria-label="Open chat">💬</button>
+    <!-- Chat bubble button -->
+    <button id="chat-toggle" aria-label="Open chat">💬</button>
 
-  <!-- Chat window -->
-  <div id="chat-window" aria-hidden="true">
-    <div id="chat-header">
-      <span>🌿 Bravo Lawn Care Assistant</span>
-      <button id="chat-close" aria-label="Close chat">✕</button>
-    </div>
-    <div id="chat-messages">
-      <div class="chat-msg chat-msg--bot">
-        Hey there! 👋 I'm Gerry's assistant. Ask me anything about our lawn care services or get a free estimate!
+    <!-- Chat window -->
+    <div id="chat-window" aria-hidden="true">
+      <div id="chat-header">
+        <span>🌿 Bravo Lawn Care Assistant</span>
+        <button id="chat-close" aria-label="Close chat">✕</button>
+      </div>
+      <div id="chat-messages">
+        <div class="chat-msg chat-msg--bot">
+          Hey there! 👋 I'm Gerry's assistant. Ask me anything about our lawn
+          care services or get a free estimate!
+        </div>
+      </div>
+      <div id="chat-input-row">
+        <input
+          type="text"
+          id="chat-input"
+          placeholder="Ask a question..."
+          aria-label="Type your message"
+        />
+        <button id="chat-send">Send</button>
       </div>
     </div>
-    <div id="chat-input-row">
-      <input type="text" id="chat-input" placeholder="Ask a question..." aria-label="Type your message">
-      <button id="chat-send">Send</button>
-    </div>
-  </div>
 
-  <!-- Chat styles -->
-  <style>
-    /* Toggle button */
-    #chat-toggle {
-      position: fixed;
-      bottom: 1.5rem;
-      right: 1.5rem;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background-color: #1d7a74;
-      color: white;
-      font-size: 1.5rem;
-      border: none;
-      cursor: pointer;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.25);
-      z-index: 9999;
-      transition: transform 0.2s ease, background-color 0.2s ease;
-    }
-    #chat-toggle:hover { background-color: #145c57; transform: scale(1.08); }
-
-    /* Chat window */
-    #chat-window {
-      display: none;
-      position: fixed;
-      bottom: 5rem;
-      right: 1.5rem;
-      width: 320px;
-      max-height: 440px;
-      background: #ffffff;
-      border-radius: 16px;
-      box-shadow: 0 8px 40px rgba(0,0,0,0.2);
-      z-index: 9998;
-      flex-direction: column;
-      overflow: hidden;
-      font-family: 'DM Sans', sans-serif;
-    }
-    #chat-window.is-open { display: flex; }
-
-    /* Header */
-    #chat-header {
-      background: #145c57;
-      color: white;
-      padding: 0.85rem 1rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: 600;
-      font-size: 0.9rem;
-    }
-    #chat-close {
-      background: none;
-      border: none;
-      color: white;
-      font-size: 1rem;
-      cursor: pointer;
-      opacity: 0.8;
-    }
-    #chat-close:hover { opacity: 1; }
-
-    /* Messages area */
-    #chat-messages {
-      flex: 1;
-      overflow-y: auto;
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
-    }
-
-    /* Individual message bubbles */
-    .chat-msg {
-      max-width: 85%;
-      padding: 0.6rem 0.9rem;
-      border-radius: 12px;
-      font-size: 0.88rem;
-      line-height: 1.5;
-    }
-    .chat-msg--bot {
-      background: #f0f8f7;
-      border: 1px solid #c8e6e4;
-      color: #1a1a2e;
-      align-self: flex-start;
-      border-bottom-left-radius: 4px;
-    }
-    .chat-msg--user {
-      background: #1d7a74;
-      color: white;
-      align-self: flex-end;
-      border-bottom-right-radius: 4px;
-    }
-    .chat-msg--typing {
-      background: #f0f8f7;
-      border: 1px solid #c8e6e4;
-      color: #888;
-      align-self: flex-start;
-      font-style: italic;
-      font-size: 0.82rem;
-    }
-
-    /* Input row */
-    #chat-input-row {
-      display: flex;
-      border-top: 1px solid #e8e8e8;
-      padding: 0.6rem;
-      gap: 0.5rem;
-    }
-    #chat-input {
-      flex: 1;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 0.5rem 0.75rem;
-      font-size: 0.88rem;
-      outline: none;
-    }
-    #chat-input:focus { border-color: #1d7a74; }
-    #chat-send {
-      background: #1d7a74;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      padding: 0.5rem 0.9rem;
-      font-size: 0.88rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background-color 0.2s ease;
-    }
-    #chat-send:hover { background: #145c57; }
-    #chat-send:disabled { background: #aaa; cursor: default; }
-  </style>
-
-  <!-- Chat script -->
-  <script>
-    // ── Bravo Lawn Care chat widget ──────────────────────────
-    // Connects to the bravo-chat Cloudflare Worker
-    const WORKER_URL = 'https://bravo-chat.moore-madyson.workers.dev';
-
-    const toggle    = document.getElementById('chat-toggle');
-    const chatWin   = document.getElementById('chat-window');
-    const closeBtn  = document.getElementById('chat-close');
-    const messages  = document.getElementById('chat-messages');
-    const input     = document.getElementById('chat-input');
-    const sendBtn   = document.getElementById('chat-send');
-
-    // Conversation history sent with each request for context
-    let history = [];
-
-    // Open / close chat window
-    toggle.addEventListener('click', () => {
-      chatWin.classList.toggle('is-open');
-      if (chatWin.classList.contains('is-open')) input.focus();
-    });
-    closeBtn.addEventListener('click', () => chatWin.classList.remove('is-open'));
-
-    // Send on Enter key
-    input.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
-    });
-    sendBtn.addEventListener('click', sendMessage);
-
-    // Add a message bubble to the chat window
-    function addMessage(text, role) {
-      const div = document.createElement('div');
-      div.className = 'chat-msg chat-msg--' + role;
-      div.textContent = text;
-      messages.appendChild(div);
-      messages.scrollTop = messages.scrollHeight;
-      return div;
-    }
-
-    // Send message to the worker and display reply
-    async function sendMessage() {
-      const text = input.value.trim();
-      if (!text) return;
-
-      // Show user message
-      addMessage(text, 'user');
-      history.push({ role: 'user', content: text });
-      input.value = '';
-      sendBtn.disabled = true;
-
-      // Show typing indicator
-      const typing = addMessage('Typing...', 'typing');
-
-      try {
-        const res = await fetch(WORKER_URL, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ message: text, history: history.slice(-6) })
-        });
-        const data = await res.json();
-
-        // Remove typing indicator, show real reply
-        typing.remove();
-        addMessage(data.reply, 'bot');
-        history.push({ role: 'assistant', content: data.reply });
-
-      } catch (err) {
-        typing.remove();
-        addMessage('Sorry, something went wrong. Please call us at 601-329-3322!', 'bot');
+    <!-- Chat styles -->
+    <style>
+      /* Toggle button */
+      #chat-toggle {
+        position: fixed;
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: #1d7a74;
+        color: white;
+        font-size: 1.5rem;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+        z-index: 9999;
+        transition:
+          transform 0.2s ease,
+          background-color 0.2s ease;
+      }
+      #chat-toggle:hover {
+        background-color: #145c57;
+        transform: scale(1.08);
       }
 
-      sendBtn.disabled = false;
-      input.focus();
-    }
-  </script>
+      /* Chat window */
+      #chat-window {
+        display: none;
+        position: fixed;
+        bottom: 5rem;
+        right: 1.5rem;
+        width: 320px;
+        max-height: 440px;
+        background: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+        z-index: 9998;
+        flex-direction: column;
+        overflow: hidden;
+        font-family: "DM Sans", sans-serif;
+      }
+      #chat-window.is-open {
+        display: flex;
+      }
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-  <script src="main.js"></script>
+      /* Header */
+      #chat-header {
+        background: #145c57;
+        color: white;
+        padding: 0.85rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+      #chat-close {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        opacity: 0.8;
+      }
+      #chat-close:hover {
+        opacity: 1;
+      }
 
-</body>
+      /* Messages area */
+      #chat-messages {
+        flex: 1;
+        overflow-y: auto;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+
+      /* Individual message bubbles */
+      .chat-msg {
+        max-width: 85%;
+        padding: 0.6rem 0.9rem;
+        border-radius: 12px;
+        font-size: 0.88rem;
+        line-height: 1.5;
+      }
+      .chat-msg--bot {
+        background: #f0f8f7;
+        border: 1px solid #c8e6e4;
+        color: #1a1a2e;
+        align-self: flex-start;
+        border-bottom-left-radius: 4px;
+      }
+      .chat-msg--user {
+        background: #1d7a74;
+        color: white;
+        align-self: flex-end;
+        border-bottom-right-radius: 4px;
+      }
+      .chat-msg--typing {
+        background: #f0f8f7;
+        border: 1px solid #c8e6e4;
+        color: #888;
+        align-self: flex-start;
+        font-style: italic;
+        font-size: 0.82rem;
+      }
+
+      /* Input row */
+      #chat-input-row {
+        display: flex;
+        border-top: 1px solid #e8e8e8;
+        padding: 0.6rem;
+        gap: 0.5rem;
+      }
+      #chat-input {
+        flex: 1;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.88rem;
+        outline: none;
+      }
+      #chat-input:focus {
+        border-color: #1d7a74;
+      }
+      #chat-send {
+        background: #1d7a74;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 0.5rem 0.9rem;
+        font-size: 0.88rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+      }
+      #chat-send:hover {
+        background: #145c57;
+      }
+      #chat-send:disabled {
+        background: #aaa;
+        cursor: default;
+      }
+    </style>
+
+    <!-- Chat script -->
+    <script>
+      // ── Bravo Lawn Care chat widget ──────────────────────────
+      // Connects to the bravo-chat Cloudflare Worker
+      const WORKER_URL = "https://bravo-chat.moore-madyson.workers.dev";
+
+      const toggle = document.getElementById("chat-toggle");
+      const chatWin = document.getElementById("chat-window");
+      const closeBtn = document.getElementById("chat-close");
+      const messages = document.getElementById("chat-messages");
+      const input = document.getElementById("chat-input");
+      const sendBtn = document.getElementById("chat-send");
+
+      // Conversation history sent with each request for context
+      let history = [];
+
+      // Open / close chat window
+      toggle.addEventListener("click", () => {
+        chatWin.classList.toggle("is-open");
+        if (chatWin.classList.contains("is-open")) input.focus();
+      });
+      closeBtn.addEventListener("click", () =>
+        chatWin.classList.remove("is-open"),
+      );
+
+      // Send on Enter key
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" && !e.shiftKey) {
+          e.preventDefault();
+          sendMessage();
+        }
+      });
+      sendBtn.addEventListener("click", sendMessage);
+
+      // Add a message bubble to the chat window
+      function addMessage(text, role) {
+        const div = document.createElement("div");
+        div.className = "chat-msg chat-msg--" + role;
+        div.textContent = text;
+        messages.appendChild(div);
+        messages.scrollTop = messages.scrollHeight;
+        return div;
+      }
+
+      // Send message to the worker and display reply
+      async function sendMessage() {
+        const text = input.value.trim();
+        if (!text) return;
+
+        // Show user message
+        addMessage(text, "user");
+        history.push({ role: "user", content: text });
+        input.value = "";
+        sendBtn.disabled = true;
+
+        // Show typing indicator
+        const typing = addMessage("Typing...", "typing");
+
+        try {
+          const res = await fetch(WORKER_URL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ message: text, history: history.slice(-6) }),
+          });
+          const data = await res.json();
+
+          // Remove typing indicator, show real reply
+          typing.remove();
+          addMessage(data.reply, "bot");
+          history.push({ role: "assistant", content: data.reply });
+        } catch (err) {
+          typing.remove();
+          addMessage(
+            "Sorry, something went wrong. Please call us at 601-329-3322!",
+            "bot",
+          );
+        }
+
+        sendBtn.disabled = false;
+        input.focus();
+      }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>

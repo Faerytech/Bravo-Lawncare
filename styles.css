@@ -47,7 +47,7 @@
   --font-body:    'Source Sans 3', sans-serif;
 
   /* Spacing shorthand */
-  --section-padding: 5rem 0;
+  --section-padding: 3rem 0;
 }
 
 
@@ -103,8 +103,10 @@ html {
 
 /* Logo image inside the nav */
 .nav-logo {
-  height: 52px;
-  width: auto;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /* Nav links — white with slight transparency */
@@ -164,7 +166,7 @@ html {
 
 .hero {
   position: relative;
-  min-height: 90vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   padding: 4rem 0;
@@ -207,12 +209,23 @@ html {
 .hero-logo {
   width: 130px;
   height: 130px;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
-  padding: 8px;
+  padding: 0;
   margin-bottom: 1.5rem;
   display: block;
+  animation: fadeDown 0.8s ease both;
+}
+
+/* Large logo in hero right column */
+.hero-logo-large {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.35);
+  border: 4px solid rgba(255, 255, 255, 0.15);
   animation: fadeDown 0.8s ease both;
 }
 
@@ -337,7 +350,7 @@ html {
 
 /* Reusable section header block */
 .section-header {
-  margin-bottom: 3rem;
+  margin-bottom: 1.75rem;
 }
 
 /* Small all-caps label above section titles */
@@ -376,7 +389,7 @@ html {
   background-color: var(--white);
   border: 1px solid #e2ede2;
   border-radius: 12px;
-  padding: 2rem 1.75rem;
+  padding: 1.25rem 1.25rem;
   height: 100%;
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
@@ -397,7 +410,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
 }
 
 .service-icon i {
@@ -435,6 +448,40 @@ html {
 .service-card--cta {
   background: rgba(29, 122, 116, 0.04);
   border-color: var(--teal-light);
+}
+
+
+/* ── Compact service card (no description, icon + title only) ──
+   Used in the split services/tiktok layout
+──────────────────────────────────────────────────────────────── */
+.service-card--sm {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 100%;
+  height: 100%;
+  min-height: 140px;
+}
+
+.service-card--sm .service-icon {
+  margin-bottom: 0;
+  width: 48px;
+  height: 48px;
+}
+
+.service-card--sm h4 {
+  font-size: 1.05rem;
+  margin-bottom: 0;
+}
+
+.service-card--sm p {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin: 0;
 }
 
 /* "Ask us →" link inside CTA card */
@@ -551,6 +598,58 @@ html {
 }
 
 /* TikTok/FB link block below carousel */
+
+/* ── TikTok carousel wrapper ────────────────────────────────
+   Centers one video at a time in a clean rounded container
+──────────────────────────────────────────────────────────── */
+.tiktok-wrap {
+  width: 325px;
+  height: 580px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  background: #000;
+  /* Ensure border-radius clips children including injected iframes */
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  mask-image: radial-gradient(white, black);
+  isolation: isolate;
+}
+
+/* Make the blockquote fill the wrapper */
+.tiktok-wrap .tiktok-embed {
+  width: 325px !important;
+  max-width: 325px !important;
+  min-width: 325px !important;
+  margin: 0 !important;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Force iframe to respect rounded corners */
+.tiktok-wrap iframe {
+  border-radius: 20px !important;
+  overflow: hidden !important;
+}
+
+/* Carousel padding so arrows don't overlap video */
+#tiktokCarousel {
+  padding: 0 3rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Gold dots for tiktok carousel */
+.tiktok-indicators [data-bs-target] {
+  background-color: rgba(255,255,255,0.4);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+}
+.tiktok-indicators .active {
+  background-color: #c49a10;
+}
+
 .gallery-tiktok-link {
   text-align: center;
   margin-top: 2.5rem;
@@ -609,6 +708,46 @@ html {
 
 .btn-social-fb:hover {
   background-color: #1464d0;
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.btn-social-nd {
+  background-color: #00b259;
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 0.75rem 1.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.btn-social-nd:hover {
+  background-color: #009e4e;
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.btn-social-cal {
+  background-color: var(--teal);
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 0.75rem 1.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.btn-social-cal:hover {
+  background-color: var(--teal-dark);
   color: var(--white);
   transform: translateY(-2px);
 }
@@ -859,15 +998,50 @@ html {
 
 /* Logo in footer — inverted to white */
 .footer-logo {
-  height: 48px;
-  width: auto;
-  filter: brightness(0) invert(1);
-  opacity: 0.85;
+  height: 56px;
+  width: 56px;
+  object-fit: cover;
+  border-radius: 50%;
+  opacity: 0.9;
   display: block;
   margin-bottom: 0.5rem;
 }
 
-.footer-address {
+.faerytech-footer-logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0;
+}
+
+/* Faery Tech footer credit */
+.faerytech-credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+  transition: color 0.2s ease;
+  margin-top: 0.5rem;
+}
+.faerytech-credit:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+.faerytech-credit-logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0.75;
+}
+.faerytech-credit strong {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Faery Tech footer credit */
+.faerytech-credit {
   color: rgba(255, 255, 255, 0.45);
   font-size: 0.85rem;
   margin: 0;

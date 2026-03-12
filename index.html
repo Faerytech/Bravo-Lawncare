@@ -91,15 +91,6 @@
       <div class="row">
         <div class="col-lg-7">
 
-          <!-- Location badge -->
-          <div class="hero-badge">
-            <i class="fas fa-map-marker-alt"></i>
-            Serving Hattiesburg, MS &amp; Surrounding Areas
-          </div>
-
-          <!-- Logo repeated in hero for brand reinforcement -->
-          <img src="bravo-logo.jpg" alt="Bravo Lawn Care LLC" class="hero-logo">
-
           <!-- Main headline -->
           <h1 class="hero-title">
             Your Yard.<br>
@@ -169,232 +160,183 @@
   </div>
   <!-- END TRUST BAR -->
 
-
   <!-- ============================================================
-       SERVICES SECTION
-       Six cards: the 5 services from his Facebook + a "custom" card.
-       Icons are Font Awesome. Cards lift on hover (CSS transition).
+       SERVICES + TIKTOK — COMBINED SPLIT SECTION
+       Left half: compact services grid (2 cols, no descriptions)
+       Right half: TikTok video carousel
+       Stacks vertically on mobile.
   ============================================================ -->
   <section class="services-section" id="services">
-    <div class="container">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row g-5 align-items-start">
 
-      <!-- Section header -->
-      <div class="section-header">
-        <p class="section-label">What We Do</p>
-        <h2 class="section-title">Services We Offer</h2>
-        <p class="section-sub">
-          From weekly mowing to full yard transformations — we handle it all so you don't have to.
-        </p>
-      </div>
+        <!-- ── LEFT: Services grid ─────────────────────────── -->
+        <div class="col-12 col-lg-6">
 
-      <div class="row g-4">
-
-        <!-- Lawn Mowing -->
-        <div class="col-sm-6 col-lg-4">
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-cut"></i>
-            </div>
-            <h4>Lawn Mowing</h4>
-            <p>Regular mowing and edging to keep your lawn neat, healthy, and well-maintained all season long.</p>
+          <div class="section-header text-center">
+            <p class="section-label">What We Do</p>
+            <h2 class="section-title">Services We Offer</h2>
+            <p class="section-sub mx-auto">From weekly mowing to full yard transformations — we handle it all.</p>
           </div>
-        </div>
 
-        <!-- Yard Cleanup -->
-        <div class="col-sm-6 col-lg-4">
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-broom"></i>
-            </div>
-            <h4>General Yard Cleanup</h4>
-            <p>Debris removal, leaf cleanup, and full-yard clearing. We leave your property looking fresh and clean.</p>
-          </div>
-        </div>
+          <div class="row g-3">
 
-        <!-- Sod Installation -->
-        <div class="col-sm-6 col-lg-4">
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-seedling"></i>
+            <div class="col-6">
+              <div class="service-card service-card--sm">
+                <div class="service-icon"><i class="fas fa-cut"></i></div>
+                <h4>Lawn Mowing</h4>
+                <p>Neat, clean cuts and edging all season long.</p>
+              </div>
             </div>
-            <h4>Sod Installation</h4>
-            <p>Transform bare or patchy areas into a lush, green lawn with professional sod installation.</p>
-          </div>
-        </div>
 
-        <!-- Aeration -->
-        <div class="col-sm-6 col-lg-4">
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-wind"></i>
+            <div class="col-6">
+              <div class="service-card service-card--sm">
+                <div class="service-icon"><i class="fas fa-broom"></i></div>
+                <h4>General Yard Cleanup</h4>
+                <p>Debris removal, leaf clearing, full-yard refresh.</p>
+              </div>
             </div>
-            <h4>Aeration</h4>
-            <p>Loosen compacted soil to improve drainage, root growth, and overall lawn health with core aeration.</p>
-          </div>
-        </div>
 
-        <!-- Power Washing -->
-        <div class="col-sm-6 col-lg-4">
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-tint"></i>
+            <div class="col-6">
+              <div class="service-card service-card--sm">
+                <div class="service-icon"><i class="fas fa-seedling"></i></div>
+                <h4>Sod Installation</h4>
+                <p>From bare patches to a lush, green lawn.</p>
+              </div>
             </div>
-            <h4>Power Washing</h4>
-            <p>Blast away dirt, grime, and stains from driveways, sidewalks, patios, and more.</p>
-          </div>
-        </div>
 
-        <!-- Custom / catch-all card -->
-        <div class="col-sm-6 col-lg-4">
-          <div class="service-card service-card--cta">
-            <div class="service-icon service-icon--green">
-              <i class="fas fa-question-circle"></i>
+            <div class="col-6">
+              <div class="service-card service-card--sm">
+                <div class="service-icon"><i class="fas fa-wind"></i></div>
+                <h4>Aeration</h4>
+                <p>Loosen compacted soil for healthier roots.</p>
+              </div>
             </div>
-            <h4>Need Something Else?</h4>
-            <p>Don't see what you need? Reach out — we offer custom services and are happy to give a free estimate for any outdoor project.</p>
-            <a href="#contact" class="service-ask-link">Ask us &rarr;</a>
+
+            <div class="col-6">
+              <div class="service-card service-card--sm">
+                <div class="service-icon"><i class="fas fa-tint"></i></div>
+                <h4>Power Washing</h4>
+                <p>Driveways, patios, sidewalks — spotless.</p>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="service-card service-card--sm service-card--cta">
+                <div class="service-icon service-icon--green"><i class="fas fa-question-circle"></i></div>
+                <h4>Something Else?</h4>
+                <a href="#contact" class="service-ask-link">Ask us &rarr;</a>
+              </div>
+            </div>
+
           </div>
+
+          <!-- Social + follow links below services grid -->
+          <div class="gallery-tiktok-link mt-4">
+            <div class="gallery-social-btns">
+              <a href="https://www.tiktok.com/@bravo.lawns" target="_blank" class="btn-social-tiktok">
+                <i class="fab fa-tiktok"></i> @bravo.lawns
+              </a>
+              <a href="https://www.facebook.com/people/Bravo-Lawn-Care-LLC/61576237877070/" target="_blank" class="btn-social-fb">
+                <i class="fab fa-facebook"></i> Facebook
+              </a>
+              <a href="https://nextdoor.com/page/bravo-lawn-care-llc-hattiesburg-ms" target="_blank" class="btn-social-nd">
+                <i class="fas fa-map-marker-alt"></i> Nextdoor
+              </a>
+
+            </div>
+          </div>
+
         </div>
+        <!-- END left services col -->
+
+        <!-- ── RIGHT: TikTok carousel ───────────────────────── -->
+        <div class="col-12 col-lg-6" id="gallery">
+
+          <div class="section-header text-center">
+            <p class="section-label">Our Work</p>
+            <h2 class="section-title">Watch Us Work</h2>
+            <p class="section-sub mx-auto">Real yards, real results — straight from our TikTok.</p>
+          </div>
+
+          <script async src="https://www.tiktok.com/embed.js"></script>
+
+          <div id="tiktokCarousel" class="carousel slide" data-bs-ride="false">
+
+            <div class="carousel-indicators tiktok-indicators">
+              <button type="button" data-bs-target="#tiktokCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Video 1"></button>
+              <button type="button" data-bs-target="#tiktokCarousel" data-bs-slide-to="1" aria-label="Video 2"></button>
+              <button type="button" data-bs-target="#tiktokCarousel" data-bs-slide-to="2" aria-label="Video 3"></button>
+              <button type="button" data-bs-target="#tiktokCarousel" data-bs-slide-to="3" aria-label="Video 4"></button>
+              <button type="button" data-bs-target="#tiktokCarousel" data-bs-slide-to="4" aria-label="Video 5"></button>
+              <button type="button" data-bs-target="#tiktokCarousel" data-bs-slide-to="5" aria-label="Video 6"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="tiktok-wrap mx-auto">
+                  <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bravo.lawns/video/7560183079105498382" data-video-id="7560183079105498382" style="max-width:325px;min-width:325px;">
+                    <section><a target="_blank" title="@bravo.lawns" href="https://www.tiktok.com/@bravo.lawns?refer=embed">@bravo.lawns</a></section>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="tiktok-wrap mx-auto">
+                  <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bravo.lawns/video/7615241624070720782" data-video-id="7615241624070720782" style="max-width:325px;min-width:325px;">
+                    <section><a target="_blank" title="@bravo.lawns" href="https://www.tiktok.com/@bravo.lawns?refer=embed">@bravo.lawns</a></section>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="tiktok-wrap mx-auto">
+                  <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bravo.lawns/video/7569077144056302862" data-video-id="7569077144056302862" style="max-width:325px;min-width:325px;">
+                    <section><a target="_blank" title="@bravo.lawns" href="https://www.tiktok.com/@bravo.lawns?refer=embed">@bravo.lawns</a></section>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="tiktok-wrap mx-auto">
+                  <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bravo.lawns/video/7496474278590729518" data-video-id="7496474278590729518" style="max-width:325px;min-width:325px;">
+                    <section><a target="_blank" title="@bravo.lawns" href="https://www.tiktok.com/@bravo.lawns?refer=embed">@bravo.lawns</a></section>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="tiktok-wrap mx-auto">
+                  <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bravo.lawns/video/7566515474175970573" data-video-id="7566515474175970573" style="max-width:325px;min-width:325px;">
+                    <section><a target="_blank" title="@bravo.lawns" href="https://www.tiktok.com/@bravo.lawns?refer=embed">@bravo.lawns</a></section>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="tiktok-wrap mx-auto">
+                  <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bravo.lawns/video/7569725931569302798" data-video-id="7569725931569302798" style="max-width:325px;min-width:325px;">
+                    <section><a target="_blank" title="@bravo.lawns" href="https://www.tiktok.com/@bravo.lawns?refer=embed">@bravo.lawns</a></section>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#tiktokCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#tiktokCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+          </div>
+          <!-- END tiktok carousel -->
+
+        </div>
+        <!-- END right tiktok col -->
 
       </div>
     </div>
   </section>
-  <!-- END SERVICES -->
+  <!-- END SERVICES + GALLERY -->
 
-
-  <!-- ============================================================
-       GALLERY / CAROUSEL SECTION
-       Bootstrap carousel showing before/after and project photos.
-       Replace the placeholder divs with <img> tags once Gerry
-       provides photos. Each slide has a caption overlay.
-
-       TO ADD PHOTOS:
-         Replace each .carousel-placeholder div with:
-         <img src="your-photo.jpg" class="d-block w-100 carousel-img" alt="description">
-  ============================================================ -->
-  <section class="gallery-section" id="gallery">
-    <div class="container">
-
-      <!-- Section header -->
-      <div class="section-header">
-        <p class="section-label">Our Work</p>
-        <h2 class="section-title">See the Results</h2>
-        <p class="section-sub">Real yards, real results. Swipe through recent projects.</p>
-      </div>
-
-      <!-- Bootstrap Carousel
-           data-bs-ride="carousel" = auto-advances
-           data-bs-interval on each item controls timing per slide
-      -->
-      <div id="bravoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-        <!-- Slide indicators (dots at the bottom) -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#bravoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#bravoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#bravoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#bravoCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#bravoCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        </div>
-
-        <!-- Slides -->
-        <div class="carousel-inner">
-
-          <!-- SLIDE 1 — replace placeholder with real photo -->
-          <div class="carousel-item active" data-bs-interval="4000">
-            <div class="carousel-placeholder">
-              <i class="fas fa-camera"></i>
-              <p>Add project photo here</p>
-            </div>
-            <!-- Uncomment and fill in once you have photos:
-            <img src="project-1.jpg" class="d-block w-100 carousel-img" alt="Lawn cleanup project">
-            -->
-            <div class="carousel-caption">
-              <h5>General Yard Cleanup</h5>
-              <p>Hattiesburg, MS</p>
-            </div>
-          </div>
-
-          <!-- SLIDE 2 -->
-          <div class="carousel-item" data-bs-interval="4000">
-            <div class="carousel-placeholder">
-              <i class="fas fa-camera"></i>
-              <p>Add project photo here</p>
-            </div>
-            <div class="carousel-caption">
-              <h5>Lawn Mowing &amp; Edging</h5>
-              <p>Professional finish, every time</p>
-            </div>
-          </div>
-
-          <!-- SLIDE 3 -->
-          <div class="carousel-item" data-bs-interval="4000">
-            <div class="carousel-placeholder">
-              <i class="fas fa-camera"></i>
-              <p>Add project photo here</p>
-            </div>
-            <div class="carousel-caption">
-              <h5>Sod Installation</h5>
-              <p>From bare patches to lush lawn</p>
-            </div>
-          </div>
-
-          <!-- SLIDE 4 -->
-          <div class="carousel-item" data-bs-interval="4000">
-            <div class="carousel-placeholder">
-              <i class="fas fa-camera"></i>
-              <p>Add project photo here</p>
-            </div>
-            <div class="carousel-caption">
-              <h5>Power Washing</h5>
-              <p>Driveways, patios, walkways</p>
-            </div>
-          </div>
-
-          <!-- SLIDE 5 -->
-          <div class="carousel-item" data-bs-interval="4000">
-            <div class="carousel-placeholder">
-              <i class="fas fa-camera"></i>
-              <p>Add project photo here</p>
-            </div>
-            <div class="carousel-caption">
-              <h5>Landscaping &amp; Cleanup</h5>
-              <p>Full yard transformations</p>
-            </div>
-          </div>
-
-        </div>
-        <!-- END carousel-inner -->
-
-        <!-- Prev/Next arrow controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#bravoCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#bravoCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-
-      </div>
-      <!-- END Bootstrap Carousel -->
-
-      <!-- Link to TikTok for more content -->
-      <div class="gallery-tiktok-link">
-        <p>Want to see more? Check out our work on TikTok and Facebook.</p>
-        <div class="gallery-social-btns">
-          <a href="https://www.tiktok.com/@bravo.lawns" target="_blank" class="btn-social-tiktok">
-            <i class="fab fa-tiktok"></i> @bravo.lawns
-          </a>
-          <a href="https://www.facebook.com/people/Bravo-Lawn-Care-LLC/61576237877070/" target="_blank" class="btn-social-fb">
-            <i class="fab fa-facebook"></i> Facebook Page
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- END GALLERY -->
 
 
   <!-- ============================================================
@@ -625,15 +567,17 @@
 
         <!-- Logo + address -->
         <div class="col-md-4">
-          <img src="bravo-logo.jpg" alt="Bravo Lawn Care LLC" class="footer-logo">
-          <p class="footer-address">Hattiesburg, MS &amp; Surrounding Areas</p>
+          <!-- Faery Tech credit -->
+          <a href="https://faerytech.net" target="_blank" class="faerytech-credit">
+            <img src="faerytech-logo.png" alt="Faery Tech" class="footer-logo faerytech-footer-logo">
+            <span>Site by <strong>Faery Tech</strong></span>
+          </a>
         </div>
 
         <!-- Copyright + phone -->
         <div class="col-md-4 text-md-center">
           <p class="footer-phone"><a href="tel:+16013293322">601-329-3322</a></p>
           <p class="footer-copy">&copy; 2026 Bravo Lawn Care LLC. All rights reserved.</p>
-          <p class="footer-credit">Site by <a href="https://faerytech.net" target="_blank">Faery Tech</a></p>
         </div>
 
         <!-- Social icons -->
@@ -646,7 +590,7 @@
               <i class="fab fa-facebook-f"></i>
             </a>
             <a href="https://nextdoor.com/page/bravo-lawn-care-llc-hattiesburg-ms" target="_blank" class="social-icon" aria-label="Nextdoor">
-              <i class="fas fa-map-marker-alt"></i>
+              <span style="font-size:0.7rem;font-weight:700;letter-spacing:0.05em;">ND</span>
             </a>
           </div>
         </div>

@@ -437,10 +437,10 @@ html {
 
 /* Card body text */
 .service-card p {
-  color: var(--muted);
+  color: var(--charcoal);
   font-size: 0.92rem;
   line-height: 1.7;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -478,7 +478,7 @@ html {
 }
 
 .service-card--sm p {
-  color: var(--muted);
+  color: var(--charcoal);
   font-size: 0.88rem;
   line-height: 1.5;
   margin: 0;
@@ -852,9 +852,9 @@ html {
 }
 
 .why-text p {
-  color: var(--muted);
+  color: var(--charcoal);
   font-size: 0.92rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.7;
   margin: 0;
 }

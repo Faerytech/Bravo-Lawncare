@@ -19,6 +19,43 @@
     />
 
     <!-- ============================================================
+       LOCAL BUSINESS SCHEMA — helps Google understand business info
+       Update if address, phone, hours, or services change
+  ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Bravo Lawn Care LLC",
+      "url": "https://bravolawncare.com",
+      "telephone": "601-329-3322",
+      "email": "bravoslawnscaping@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "803 Richburg Rd",
+        "addressLocality": "Hattiesburg",
+        "addressRegion": "MS",
+        "postalCode": "39402",
+        "addressCountry": "US"
+      },
+      "openingHours": "Mo-Fr 07:00-18:00",
+      "areaServed": ["Oak Grove", "Lake Serene", "Canebrake", "Hattiesburg", "Petal", "Sumrall", "Purvis", "Moselle"],
+      "description": "Professional lawn care services in Hattiesburg, MS. Mowing, cleanup, sod installation, aeration, and power washing. Free estimates.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Lawn Care Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lawn Mowing" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Yard Cleanup" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sod Installation" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aeration" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Power Washing" } }
+        ]
+      }
+    }
+    </script>
+
+    <!-- ============================================================
        GOOGLE FONTS
        Oswald  = headings (bold, strong, professional)
        Source Sans 3 = body text (clean, readable)
@@ -572,94 +609,19 @@
     </section>
     <!-- END WHY US -->
 
-    <!-- ============================================================
-       REVIEWS SECTION
-       Real customer reviews. White background.
-    ============================================================ -->
+    <!-- REVIEWS SECTION -->
     <section class="reviews-section" id="reviews">
       <div class="container">
         <div class="section-header text-center">
           <p class="section-label">What Neighbors Say</p>
           <h2 class="section-title">Real Reviews from Real Customers</h2>
-          <p class="section-sub mx-auto">
-            Don't take our word for it — here's what your neighbors have to say.
-          </p>
+          <p class="section-sub mx-auto">Don't take our word for it &#8212; here's what your neighbors have to say.</p>
         </div>
-
         <div class="row g-4">
-
-          <!-- Review 1 — Tom Thompson -->
-          <div class="col-md-6 col-lg-3">
-            <div class="review-card">
-              <div class="review-stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p class="review-text">"Gerry and his crew did a fantastic job in my yard. I had neglected many chores lately and they did a great job taking care of them. I highly recommend them!"</p>
-              <div class="review-author">
-                <span class="review-name">Tom Thompson</span>
-                <span class="review-location">Hattiesburg, MS</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Review 2 — Karen Conley -->
-          <div class="col-md-6 col-lg-3">
-            <div class="review-card">
-              <div class="review-stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p class="review-text">"Gerry has done so many outstanding projects for us since we moved to Hattiesburg — landscaping design, outdoor lighting, fire pit, and regular maintenance. We rely on him for so much and he always comes through."</p>
-              <div class="review-author">
-                <span class="review-name">Karen Conley</span>
-                <span class="review-location">Hattiesburg, MS</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Review 3 — Alex Garcia -->
-          <div class="col-md-6 col-lg-3">
-            <div class="review-card">
-              <div class="review-stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p class="review-text">"Try Bravo Lawn Care, LLC — they always do good work in lawn care maintenance with good price!"</p>
-              <div class="review-author">
-                <span class="review-name">Alex Garcia</span>
-                <span class="review-location">Hattiesburg, MS</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Review 4 — Johnny S. -->
-          <div class="col-md-6 col-lg-3">
-            <div class="review-card">
-              <div class="review-stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p class="review-text">"I don't recommend services much, but in this case I will. Bravo Lawn Care responded quickly and did a professional job on my flower beds and some difficult brush removal."</p>
-              <div class="review-author">
-                <span class="review-name">Johnny S.</span>
-                <span class="review-location">Hattiesburg, MS</span>
-              </div>
-            </div>
-          </div>
-
+          <div class="col-md-6 col-lg-3"><div class="review-card"><div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="review-text">&ldquo;Gerry and his crew did a fantastic job in my yard. I had neglected many chores lately and they did a great job taking care of them. I highly recommend them!&rdquo;</p><div class="review-author"><span class="review-name">Tom Thompson</span><span class="review-location">Hattiesburg, MS</span></div></div></div>
+          <div class="col-md-6 col-lg-3"><div class="review-card"><div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="review-text">&ldquo;Gerry has done so many outstanding projects for us &#8212; landscaping design, outdoor lighting, fire pit, and regular maintenance. We rely on him for so much and he always comes through.&rdquo;</p><div class="review-author"><span class="review-name">Karen Conley</span><span class="review-location">Hattiesburg, MS</span></div></div></div>
+          <div class="col-md-6 col-lg-3"><div class="review-card"><div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="review-text">&ldquo;Try Bravo Lawn Care, LLC &#8212; they always do good work in lawn care maintenance with good price!&rdquo;</p><div class="review-author"><span class="review-name">Alex Garcia</span><span class="review-location">Hattiesburg, MS</span></div></div></div>
+          <div class="col-md-6 col-lg-3"><div class="review-card"><div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="review-text">&ldquo;I don't recommend services much, but in this case I will. Bravo Lawn Care responded quickly and did a professional job on my flower beds and some difficult brush removal.&rdquo;</p><div class="review-author"><span class="review-name">Johnny S.</span><span class="review-location">Hattiesburg, MS</span></div></div></div>
         </div>
       </div>
     </section>
